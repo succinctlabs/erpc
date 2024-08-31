@@ -104,7 +104,8 @@ func ExtractEvmBlockReferenceFromRequest(r *JsonRpcRequest) (string, int64, erro
 		"arbtrace_replayTransaction",
 		"trace_replayTransaction",
 		"debug_traceTransaction",
-		"trace_transaction":
+		"trace_transaction",
+		"debug_dbGet":
 		// For certain data it is safe to keep the data in cache even after reorg,
 		// because if client explcitly querying such data (e.g. a specific tx hash receipt)
 		// they know it might be reorged from a separate process.
